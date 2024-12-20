@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    display: flex;
+}
+
+/* Dashboard styling */
+.dashboard {
+    flex: 1; /* Take remaining space */
+    margin-left: 20px; /* Space between aside and dashboard */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+}
+
+/* Content area styling */
+.dashboard-content {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: center; /* Center the content */
+    width: 100%; /* Full width of the dashboard */
+    max-width: 800px; /* Limit the width */
+    padding: 20px; /* Add some padding */
+}
+
+/* Timeline and Calendar section styling */
+.timeline, .calendar {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside the sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for both sections */
+    margin: 10px; /* Margin between sections */
+}
+
+/* Make the calendar section square */
+.calendar {
+    height: 400px; /* Set a fixed height to make it square */
+}
+
+/* Heading styling for Timeline and Calendar */
+.timeline h2, .calendar h2 {
+    font-size: 24px; /* Font size for section headings */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+/* Timeline list styling */
+.timeline-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.timeline-list li {
+    padding: 10px; /* Padding for each list item */
+    margin-bottom: 10px; /* Space between list items */
+    background-color: #f9fafb; /* Light background for list items */
+    border-left: 4px solid #1e90ff; /* Left border for list items */
+}
+
+/* Styling for list item headings and paragraphs */
+.timeline-list h3 {
+    font-size: 18px; /* Font size for list item headings */
+    color: #333; /* Dark color for headings */
+}
+
+.timeline-list p {
+    font-size: 14px; /* Font size for list item paragraphs */
+    color: #666; /* Grey color for paragraphs */
+}
+
+/* Calendar container styling */
+.calendar-container {
+    text-align: center; /* Center the iframe */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Iframe styling */
+iframe {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove default border */
+}

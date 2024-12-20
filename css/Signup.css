@@ -1,0 +1,76 @@
+/* Signup Form Container */
+
+.gradient-clipped-background {
+  background: linear-gradient(to top, #005f73, #00c9f2); /* Gradient from dark to light */
+  -webkit-clip-path: ellipse(80% 70% at 50% 50%);
+  clip-path: ellipse(80% 70% at 50% 50%);
+  width: 100%;
+  height: 100vh; /* Ensure full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signup-form-container {
+  position: fixed;
+  top: 0;
+  right: 13%; /* Position it to the right side */
+  width: 100%; /* Ensure the container takes full height and width */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the form to the right */
+  z-index: 1000;
+}
+
+/* Transparent, blurred signup form */
+.Signup-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem; /* Increased padding for more space */
+  border-radius: 12px; /* Slightly larger border-radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+  width: 400px; /* Set the width of the form */
+  max-width: 90%; /* Ensure the form doesn't stretch too wide on smaller screens */
+  text-align: center;
+}
+
+/* Signup Form Heading */
+.Signup-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem; /* Increased font size for heading */
+  color: #fff;
+}
+
+/* Signup Form input fields and submit button */
+.Signup-form input[type="FName"],
+.Signup-form input[type="LName"],
+.Signup-form input[type="Email"],
+.Signup-form input[type="password"],
+.Signup-form select {
+  width: 100%;
+  padding: 1rem; /* Increased padding for larger input fields */
+  margin-bottom: 1.5rem; /* Increased space between fields */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly larger border-radius for inputs */
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 1.2rem; /* Larger font size for inputs */
+}
+
+/* Submit Button styling */
+.Signup-form input[type="submit"] {
+  width: 100%;
+  padding: 1rem; /* Increased padding for the submit button */
+  background-color: rgba(74, 144, 226, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Larger border-radius for submit button */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem; /* Larger font size for button */
+}
+
+.Signup-form input[type="submit"]:hover {
+  background-color: rgba(53, 122, 184, 0.8);
+}

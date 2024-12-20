@@ -1,0 +1,177 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(40deg, #3e3939, #000000);
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 50%;
+}
+
+h4 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+h6 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+.form-group input:focus {
+  border-color: #9E7676;
+  outline: none;
+}
+
+button.loginbtn {
+  width: 100%;
+  padding: 15px;
+  background-color: #9E7676;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.loginbtn:hover {
+  background-color: #815B5B;
+}
+
+.auth-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #ff6347;
+}
+
+.brand-logo img {
+  display: block;
+  margin: 0 auto 30px;
+  max-width: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.btn-facebook i {
+  margin-right: 10px;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.auth-form-btn {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.auth-form-btn:hover {
+    background-color: #0056b3;
+}

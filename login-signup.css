@@ -1,0 +1,364 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(40deg , #3e3939, #000000);
+  padding: 30px;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  background: #fffffe;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+
+  perspective: 2700px;
+}
+
+.container .cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.container #flip:checked ~ .cover {
+  transform: rotateY(-180deg);
+}
+
+.container #flip:checked ~ .forms .login-form {
+  pointer-events: none;
+}
+
+.container .cover .front,
+.container .cover .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cover .back {
+  transform: rotateY(180deg);
+}
+
+.container .cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.container .cover .text {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .cover .text::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: #ffffff;
+}
+
+.cover .text .text-1,
+.cover .text .text-2 {
+  z-index: 20;
+  font-size: 26px;
+  font-weight: 600;
+  color: 0 5px 10px rgba(215, 27, 27, 0.05);
+  text-align: center;
+}
+
+
+.cover .text .text-2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container .forms {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+.container .form-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form {
+  width: calc(100% / 2 - 25px);
+}
+
+.forms .form-content .title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.forms .form-content .title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #FFF8EA;
+}
+
+.forms .signup-form .title:before {
+  width: 20px;
+}
+
+.forms .form-content .input-boxes {
+  margin-top: 30px;
+}
+
+.forms .form-content .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.form-content .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid {
+  border-color: #eafff0;
+}
+
+.form-content .input-box i {
+  position: absolute;
+  color: #594545;
+  font-size: 17px;
+}
+
+.forms .form-content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #594545;
+}
+
+.forms .form-content .text a {
+  text-decoration: none;
+}
+
+.forms .form-content .text a:hover {
+  text-decoration: underline;
+}
+
+.forms .form-content .button {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.forms .form-content .button input {
+  color: #fff;
+  background: #9E7676;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+  background: #815B5B;
+}
+
+.forms .form-content label {
+  color: #594545;
+  cursor: pointer;
+}
+
+.forms .form-content label:hover {
+  text-decoration: underline;
+}
+
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.container #flip {
+  display: none;
+}
+
+.text a {
+    color: #211f1f; /* Replace with your desired color */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+.text a:hover {
+    color: #ff6347; /* Optional: changes color on hover */
+}
+
+.text.sign-up-text label {
+    color: #211f1f; /* Replace with your desired color */
+    cursor: pointer;
+}
+
+.text.sign-up-text label:hover {
+    color: #ff6347; /* Optional: changes color on hover */
+}
+
+
+@media (max-width: 730px) {
+  .container .cover {
+    display: none;
+  }
+
+  .form-content .login-form,
+  .form-content .signup-form {
+    width: 100%;
+  }
+
+  .form-content .signup-form {
+    display: none;
+  }
+
+  .container #flip:checked ~ .forms .signup-form {
+    display: block;
+  }
+
+  .container #flip:checked ~ .forms .login-form {
+    display: none;
+  }
+}
+
+/* Social Icons */
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7f1f1;
+    color: #0c0c0c;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social i {
+    font-size: 18px;
+}
+
+.social:hover {
+    background-color: #815B5B;
+    transform: scale(1.1);
+}
+/* General Styles for Input Box */
+.input-box {
+    margin: 15px 0; /* Space between input boxes */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Label Styles */
+.input-box label {
+    display: block; /* Block display for better spacing */
+    margin-bottom: 5px; /* Space between label and select box */
+    font-size: 16px; /* Font size for the label */
+    color: #333; /* Label color */
+}
+
+/* Select Box Container Styles */
+.select-box {
+    position: relative; /* Positioning for custom styling */
+    width: 70%; /* Full width */
+}
+
+/* Styles for Select Element */
+.select-box select {
+    width: 100%; /* Full width of the select box */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for options */
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+    appearance: none; /* Remove default arrow */
+}
+
+/* Custom Arrow */
+.select-box::after {
+    content: ''; /* Empty content for the arrow */
+    position: absolute;
+    top: 50%; /* Center the arrow vertically */
+    right: 10px; /* Position from the right */
+    transform: translateY(-50%); /* Center adjustment */
+    width: 10px; /* Arrow width */
+    height: 10px; /* Arrow height */
+    border-left: 2px solid transparent; /* Left part of arrow */
+    border-right: 2px solid transparent; /* Right part of arrow */
+    border-top: 4px solid #333; /* Top part of arrow */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Additional Styles for Major and Faculty Member Role Divs */
+#majorDiv, #facultymemberrole {
+    margin-top: 10px; /* Space above the dropdowns */
+}
+
+

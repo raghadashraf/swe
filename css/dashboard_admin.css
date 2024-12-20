@@ -1,0 +1,150 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa; /* Light background for contrast */
+    color: #333; /* Dark text color */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #343a40; /* Dark background for sidebar */
+    color: #fff; /* Light text color for sidebar */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    overflow-y: auto; /* Scrollable if content overflows */
+    padding-top: 20px; /* Spacing at the top */
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+.nav {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+/* Nav item styling */
+.nav-item {
+    position: relative; /* For absolute positioning of indicators */
+}
+
+.nav-link {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding for items */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.nav-link:hover {
+    background-color: #495057; /* Slightly lighter on hover */
+}
+
+/* Icon styling */
+.menu-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Profile image */
+.profile-image {
+    position: relative; /* For the dot indicator */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.img-xs {
+    width: 40px; /* Profile image size */
+    height: 40px; /* Profile image size */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Dot indicator */
+.dot-indicator {
+    position: absolute; /* Absolute positioning */
+    bottom: 0;
+    right: 0;
+    width: 10px; /* Size of the dot */
+    height: 10px; /* Size of the dot */
+    border-radius: 50%; /* Circular dot */
+}
+
+/* Category styling */
+.nav-category {
+    font-size: 0.9em; /* Slightly smaller font */
+    color: #adb5bd; /* Lighter color for category */
+    padding: 10px 20px; /* Padding */
+}
+
+/* Collapsible menu styles */
+.sub-menu {
+    padding-left: 20px; /* Indentation for sub-menu */
+    display: none; /* Hide by default */
+}
+
+.nav-item .collapse.show {
+    display: block; /* Show when expanded */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Change positioning */
+        height: auto; /* Height auto for content */
+    }
+}
+
+
+
+/* body {
+    background-color: #f8f9fa;
+}
+.search-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.search-btn:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-radius: 0.25rem;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.table-hover tbody tr:hover {
+    background-color: #e9ecef; 
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.form-control {
+    border-radius: 0.25rem;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.operation-icons i {
+    cursor: pointer;
+    margin-right: 8px;
+}
+.operation-icons i:hover {
+    color: #007bff;
+}
+.add-student-icon {
+    color: #28a745;
+    font-size: 1.2rem;
+}
+.add-student-icon:hover {
+    color: #218838;
+} */

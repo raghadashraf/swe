@@ -1,0 +1,161 @@
+/* sidebar.css */
+.sidebar {
+    background-color: #343a40; /* Dark sidebar color */
+    color: white;
+    height: 100vh; /* Full height */
+    padding: 20px; /* Padding for top and bottom */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    position: sticky; /* Make it sticky */
+    top: 0; /* Stick to the top */
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px; /* Space below logo */
+}
+
+.sidebar-header img {
+    width: 80%; /* Responsive logo size */
+}
+
+.nav-link {
+    color: white; /* White text color */
+    padding: 10px 15px; /* Reduced padding for compactness */
+    transition: background 0.3s, color 0.3s;
+    font-size: 16px; /* Adjusted font size */
+}
+
+.nav-link:hover {
+    background-color: #495057; /* Lighter dark color on hover */
+    color: #ffffff; /* Ensure text remains white */
+}
+
+.nav-link.active {
+    background-color: #007bff; /* Active link color */
+    border-radius: 5px; /* Slight rounding of active link */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute; /* For smaller screens, position it absolutely */
+        width: 200px; /* Fixed width for sidebar */
+    }
+    main {
+        margin-left: 220px; /* Space for sidebar */
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar and Main Layout */
+.container-fluid {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background: linear-gradient(to top, #005f73, #00c9f2);
+    color: white;
+    padding: 20px 10px;
+    min-height: 100vh;
+    width: 250px; /* Slightly wider */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar a i {
+    font-size: 20px; /* Icon size */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+.sidebar img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+.sidebar-header img {
+    width: 80%;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.dashboard-header {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

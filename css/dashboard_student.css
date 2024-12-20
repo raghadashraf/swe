@@ -1,0 +1,231 @@
+/* Gradient background with clip-path */
+.gradient-clipped-background {
+  background: linear-gradient(to top, #005f73, #ffffff); /* Gradient from dark to light */
+  -webkit-clip-path: ellipse(80% 70% at 50% 50%);
+  clip-path: ellipse(80% 70% at 50% 50%);
+  width: 100%;
+  height: 100vh; /* Ensure full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 140px; /* Narrower sidebar */
+  background-color: #efefef; /* Lighter blue */
+  color: rgb(9, 9, 9);
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: width 0.3s;
+}
+
+.navbar-header .logo {
+  width: 60px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.navbar-nav li {
+  margin: 15px 0;
+}
+
+.navbar-nav a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav i {
+  margin-right: 10px;
+}
+
+/* Dashboard and content area styling */
+.dashboard {
+  flex: 1;
+  margin-left: 200px; /* Ensure the content doesn't overlap with sidebar */
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Welcome and AI Companion Box Styling */
+.welcome-box, .ai-companion-box {
+  background-color: #9bacb45e !important; /* Use the specified color */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Adjusted content inside the AI Companion Box */
+.ai-companion-box .image-container {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.ai-companion-box img.sera-icon {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+}
+
+.ai-companion-box .future-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ai-companion-box .future-content p {
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.ai-companion-box .future-arrow-btn {
+  margin-top: 10px;
+}
+
+.ai-companion-box .future-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.ai-companion-box {
+  margin-bottom: 10px; /* Reduce the space between the AI box and categories */
+}
+
+.ai-companion-box .future-button:hover {
+  background-color: #45a049;
+}
+
+/* Welcome Box Styling */
+.welcome-box {
+  background-color: #116993; /* Grey background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.welcome-box h1 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.welcome-box p {
+  font-size: 18px;
+  color: #66666693;
+}
+
+/* Main Categories styling */
+.main-categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: -10px; /* Decrease the value further to reduce the gap */
+
+}
+
+.category-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 23%; /* Adjusted for better fit */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #333;
+  position: relative;
+}
+
+.category-box progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.category-box p {
+  margin-top: 5px;
+}
+
+.category-box h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hamburger menu and responsive adjustments */
+.hamburger-label {
+  display: none; /* Hidden by default, use media query to display */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      display: none;
+  }
+
+  .hamburger-label {
+      display: block;
+  }
+
+  .dashboard-content {
+      flex-direction: column;
+  }
+
+  .main-categories {
+      width: 100%;
+  }
+
+  .category-box {
+      width: 48%; /* Make boxes fit smaller screens */
+  }
+}
+
+.future-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+}
+
+.future-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.main-categories {
+  margin-top: -20px; /* Adjust this value as needed to raise the categories */
+  margin-top: -10px; /* Decrease the value further to reduce the gap */
+
+}

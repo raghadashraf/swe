@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Font Family */
+    background: #efeded60;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px; /* Padding around main content */
+}
+
+h1, h2 {
+    color: #343a40; /* Dark heading color */
+    font-weight: bold; /* Ensure bold headings */
+}
+
+h1 {
+    font-size: 28px; /* Main header size */
+    margin-bottom: 20px; /* Spacing below the main header */
+}
+
+h2 {
+    font-size: 24px; /* Sub-header size */
+    margin-bottom: 15px; /* Spacing below sub-headers */
+}
+
+/* Schedule Table Styles */
+.schedule-content {
+    background: #efeded60;
+    padding: 20px; /* Consistent padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Spacing above schedule content */
+}
+
+.schedule-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Spacing from the header */
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #dee2e6; /* Light border for table cells */
+    padding: 12px; /* Consistent padding inside table cells */
+    text-align: center; /* Centered text */
+    font-size: 15px; /* Adjusted font size for table text */
+    color: #333; /* Dark text color for table cells */
+}
+
+.schedule-table th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    font-weight: bold; /* Bold header text */
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light background for even rows */
+}
+
+.schedule-table tr:hover {
+    background-color: #e2e6ea; /* Highlight row on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        margin-left: 0; /* No margin for smaller screens */
+    }
+}
