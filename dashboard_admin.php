@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/dashboard_admin.css">
 
 </head>
-<body>
+<body class="gradient-clipped-background">
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
 <img src="img/logo.png" alt="Logo" width="90%">
 <br>
