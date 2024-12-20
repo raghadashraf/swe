@@ -6,11 +6,17 @@
 }
 
 /* Body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fa; /* Light background for contrast */
-    color: #333; /* Dark text color */
-}
+    .body {
+        background: linear-gradient(to top, #005f73, #00c9f2); /* Gradient from dark to light */
+        -webkit-clip-path: ellipse(80% 70% at 50% 50%);
+        clip-path: ellipse(80% 70% at 50% 50%);
+        width: 100%;
+        height: 100vh; /* Ensure full height of the viewport */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
 
 /* Sidebar styling */
 .sidebar {
